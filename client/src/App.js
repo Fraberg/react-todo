@@ -20,7 +20,6 @@ const TodosQuery = gql`
     complete
   }
 }`;
-
 const CreateTodoMutation = gql`
   mutation($text: String!) {
     createTodo(text: $text) {
