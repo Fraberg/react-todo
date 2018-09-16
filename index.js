@@ -12,7 +12,6 @@ var Todo = mongoose.model('Todo', {
   complete: Boolean
 });
 
-
 // schema necessited by graphql
 const typeDefs = `
   type Query {
