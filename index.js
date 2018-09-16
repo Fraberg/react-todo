@@ -4,8 +4,8 @@ const { GraphQLServer } = require('graphql-yoga')
 // mongoose
 var mongoose = require('mongoose');
 // ensure mongodb is runnning before launching node index.js
-mongoose.connect('mongodb://localhost/test', { useNewUrlParser: true });
-
+mongoose.connect('mongodb://localhost/test');
+// , { useNewUrlParser: true }
 // shell for model
 var Todo = mongoose.model('Todo', {
   text: String,
